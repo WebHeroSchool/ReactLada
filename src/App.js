@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 
+const flag = true;
+const count = 5;
+
 function App() {
   return (
     <div className="App">
@@ -9,7 +12,22 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <p> Hello World!</p>
+        <p style={{
+          color: 'red'
+        }}> 
+        Hello World!
+        </p>
+        <p>
+          {count},
+          {21},
+          {5+5},
+          {flag && 'FLAG'},
+          {flag ? 'flag is true': 'flag is false'}
+          {undefined}
+          {null}
+          {false}
+          {true}
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
